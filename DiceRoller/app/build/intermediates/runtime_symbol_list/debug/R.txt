@@ -2714,6 +2714,12 @@ int drawable design_ic_visibility 0x7f070083
 int drawable design_ic_visibility_off 0x7f070084
 int drawable design_password_eye 0x7f070085
 int drawable design_snackbar_background 0x7f070086
+int drawable dice_1 0x7f0700df
+int drawable dice_2 0x7f0700e0
+int drawable dice_3 0x7f0700e1
+int drawable dice_4 0x7f0700e2
+int drawable dice_5 0x7f0700e3
+int drawable dice_6 0x7f0700e4
 int drawable ic_arrow_back_black_24 0x7f070087
 int drawable ic_clear_black_24 0x7f070088
 int drawable ic_clock_black_24dp 0x7f070089
@@ -2952,6 +2958,7 @@ int id design_menu_item_action_area_stub 0x7f080092
 int id design_menu_item_text 0x7f080093
 int id design_navigation_view 0x7f080094
 int id dialog_button 0x7f080095
+int id diceResultİmage 0x7f0801ee
 int id dimensions 0x7f080096
 int id direct 0x7f080097
 int id disableHome 0x7f080098
