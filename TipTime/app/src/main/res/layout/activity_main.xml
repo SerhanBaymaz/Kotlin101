@@ -14,7 +14,7 @@
         android:layout_marginTop="56dp"
         android:layout_marginBottom="110dp"
         android:text="@string/idCostOfService"
-        android:textColor="#009688"
+        android:textColor="#1B5E20"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/idRadioButtonGroup"
@@ -28,7 +28,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginTop="153dp"
         android:text="@string/idTextHowWasTheService"
-        android:textColor="#009688"
+        android:textColor="#1B5E20"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,7 @@
         android:layout_marginStart="28dp"
         android:layout_marginBottom="212dp"
         android:text="@string/idRoundUpTip"
-        android:textColor="#009688"
+        android:textColor="#1B5E20"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -150,12 +150,13 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:hint="Enter the cost"
+        android:hint="@string/enter_the_cost"
         android:inputType="numberDecimal"
         android:textSize="16sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        android:importantForAutofill="no" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,4 +8,5 @@
     <string name="idRadioOkay">Okay (%15)</string>
     <string name="idButtonCalculate">Calculate</string>
     <string name="idInputNumberCost">Enter the cost</string>
+    <string name="enter_the_cost">Enter the cost</string>
 </resources>
