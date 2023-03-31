@@ -53,13 +53,17 @@ class MainActivity : AppCompatActivity() {
             else -> 0.15
         }
 
-        if (costOfBill==null){
+        if (costOfBill==null || costOfBill<=0){
             this.tipAmount= 0.0
             this.totalAmount=0.0
+            Toast.makeText(this,"Please enter valid cost. \uD83D\uDC80", Toast.LENGTH_SHORT).show()
         }else{
             this.tipAmount= costOfBill*choosenService
             this.totalAmount=costOfBill*(1+choosenService)
+            Toast.makeText(this,"Tip has calculated \uD83D\uDCB5", Toast.LENGTH_SHORT).show()
         }
+
+
 
     }
 
