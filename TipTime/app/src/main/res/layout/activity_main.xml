@@ -17,7 +17,7 @@
         android:textColor="#009688"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@+id/idRadioButtonGroup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,8 +51,8 @@
         android:id="@+id/idSwitchRoundUpTip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
         android:minWidth="48dp"
         android:minHeight="48dp"
         app:layout_constraintBottom_toTopOf="@+id/idButtonCalculate"
@@ -63,14 +63,23 @@
         android:id="@+id/idButtonCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="40dp"
-        android:shadowColor="#4CAF50"
+        android:layout_marginBottom="15dp"
+        android:width="260dp"
+        android:background="#03A9F4"
+        android:backgroundTint="#009688"
+        android:foregroundTint="#009688"
+        android:shadowColor="#009688"
         android:text="@string/idButtonCalculate"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/idSwitchRoundUpTip"
-        app:layout_constraintTop_toBottomOf="@+id/idRoundUpTip"
-        app:strokeColor="#009688" />
+        android:textColor="#ECECEC"
+        android:textColorHighlight="#009688"
+        android:textColorHint="#009688"
+        android:textColorLink="#009688"
+        app:iconTint="#009688"
+        app:layout_constraintBottom_toTopOf="@+id/idTextResult_Tip_Message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#009688"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/idInputNumberCost"
@@ -116,7 +125,7 @@
         tools:text="Total :" />
 
     <RadioGroup
-        android:id="@+id/radioGroup"
+        android:id="@+id/idRadioButtonGroup"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="28dp"
