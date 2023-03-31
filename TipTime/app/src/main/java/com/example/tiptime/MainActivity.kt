@@ -24,7 +24,18 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.idButtonCalculate.setOnClickListener{
+            calculateMoney()
 
+            if (binding.idSwitchRoundUpTip.isChecked){
+                this.tipAmount = kotlin.math.ceil(tipAmount)
+                this.totalAmount = kotlin.math.ceil(totalAmount)
+            }
+
+            binding.idTextResultTipMessage.text = "Tip : ${tipAmount}$"
+            binding.idTextResultTotalMessage.text="Total : ${totalAmount}\$"
+
+        }
 
     }
 
