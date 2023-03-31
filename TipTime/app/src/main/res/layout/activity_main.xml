@@ -12,10 +12,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="56dp"
+        android:layout_marginBottom="110dp"
         android:text="@string/idCostOfService"
         android:textColor="#009688"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,15 +39,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="211dp"
         android:layout_marginBottom="212dp"
         android:text="@string/idRoundUpTip"
         android:textColor="#009688"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/idTextHowWasTheService" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Switch
         android:id="@+id/idSwitchRoundUpTip"
@@ -58,32 +58,6 @@
         app:layout_constraintBottom_toTopOf="@+id/idButtonCalculate"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
-
-    <RadioButton
-        android:id="@+id/idRadioAmazing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:text="@string/idSwitchRoundUpTip"
-        app:layout_constraintStart_toStartOf="@+id/idTextHowWasTheService"
-        app:layout_constraintTop_toBottomOf="@+id/idTextHowWasTheService" />
-
-    <RadioButton
-        android:id="@+id/idRadioGood"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/idRadioGood"
-        app:layout_constraintStart_toStartOf="@+id/idRadioAmazing"
-        app:layout_constraintTop_toBottomOf="@+id/idRadioAmazing" />
-
-    <RadioButton
-        android:id="@+id/idRadioOkay"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:text="@string/idRadioOkay"
-        app:layout_constraintStart_toStartOf="@+id/idRadioGood"
-        app:layout_constraintTop_toBottomOf="@+id/idRadioGood" />
 
     <Button
         android:id="@+id/idButtonCalculate"
@@ -140,5 +114,39 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Total :" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="271dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idTextHowWasTheService"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTextCostOfService"
+        tools:ignore="TextSizeCheck">
+
+        <RadioButton
+            android:id="@+id/idRadioAmazing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/idSwitchRoundUpTip" />
+
+        <RadioButton
+            android:id="@+id/idRadioGood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/idRadioGood" />
+
+        <RadioButton
+            android:id="@+id/idRadioOkay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/idRadioOkay"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
