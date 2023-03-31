@@ -81,24 +81,6 @@
         app:strokeColor="#009688"
         tools:ignore="TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/idInputNumberCost"
-        android:layout_width="143dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:hint="@string/idInputNumberCost"
-        android:importantForAccessibility="no"
-        android:importantForAutofill="no"
-        android:inputType="number"
-        android:textSize="16sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toEndOf="@+id/idTextCostOfService"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor,TouchTargetSizeCheck" />
-
     <TextView
         android:id="@+id/idTextResult_Tip_Message"
         android:layout_width="wrap_content"
@@ -157,5 +139,20 @@
             android:text="@string/idRadioOkay"
             tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
+
+    <EditText
+        android:id="@+id/idInputNumberCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Enter the cost"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

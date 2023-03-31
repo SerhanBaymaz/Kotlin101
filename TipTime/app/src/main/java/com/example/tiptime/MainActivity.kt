@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
     fun calculateMoney(){
         //getting cost input from user.
         val stringInInputField = binding.idInputNumberCost.text.toString()
-        val costOfBill = stringInInputField.toInt()
+        val costOfBill = stringInInputField.toDouble()
 
         //Find the checked radio button, so percentage.
         val idSelectedTipPercentage = binding.idRadioButtonGroup.checkedRadioButtonId
