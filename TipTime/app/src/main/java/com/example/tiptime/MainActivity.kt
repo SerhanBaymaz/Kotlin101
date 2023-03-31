@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
             else -> 0.15
         }
 
+
         this.tipAmount= costOfBill*choosenService
         this.totalAmount=costOfBill*(1+choosenService)
     }
