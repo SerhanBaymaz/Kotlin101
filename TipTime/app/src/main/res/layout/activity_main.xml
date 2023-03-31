@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTextCostOfService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/idCostOfService"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idTextHowWasTheService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="153dp"
+        android:text="@string/idTextHowWasTheService"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idRoundUpTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="211dp"
+        android:layout_marginBottom="212dp"
+        android:text="@string/idRoundUpTip"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/idTextHowWasTheService" />
+
+    <Switch
+        android:id="@+id/idSwitchRoundUpTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="9dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/idButtonCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
+    <RadioButton
+        android:id="@+id/idRadioAmazing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:text="@string/idSwitchRoundUpTip"
+        app:layout_constraintStart_toStartOf="@+id/idTextHowWasTheService"
+        app:layout_constraintTop_toBottomOf="@+id/idTextHowWasTheService" />
+
+    <RadioButton
+        android:id="@+id/idRadioGood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/idRadioGood"
+        app:layout_constraintStart_toStartOf="@+id/idRadioAmazing"
+        app:layout_constraintTop_toBottomOf="@+id/idRadioAmazing" />
+
+    <RadioButton
+        android:id="@+id/idRadioOkay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="@string/idRadioOkay"
+        app:layout_constraintStart_toStartOf="@+id/idRadioGood"
+        app:layout_constraintTop_toBottomOf="@+id/idRadioGood" />
+
+    <Button
+        android:id="@+id/idButtonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="40dp"
+        android:shadowColor="#4CAF50"
+        android:text="@string/idButtonCalculate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/idSwitchRoundUpTip"
+        app:layout_constraintTop_toBottomOf="@+id/idRoundUpTip"
+        app:strokeColor="#009688" />
+
+    <EditText
+        android:id="@+id/idInputNumberCost"
+        android:layout_width="143dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/idInputNumberCost"
+        android:importantForAccessibility="no"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toEndOf="@+id/idTextCostOfService"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="LabelFor,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/idTextResult_Tip_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:textColor="#038708"
+        android:textSize="26sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/idTextResult_Total_Message"
+        tools:text="Tip :" />
+
+    <TextView
+        android:id="@+id/idTextResult_Total_Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="49dp"
+        android:textColor="#038708"
+        android:textSize="26sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Total :" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
