@@ -29,7 +29,22 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    fun calculateMoney(){
+        //getting cost input from user.
+        val stringInInputField = binding.idInputNumberCost.text.toString()
+        val costOfBill = stringInInputField.toInt()
 
+        //Find the checked radio button, so percentage.
+        val idSelectedTipPercentage = binding.idRadioButtonGroup.checkedRadioButtonId
+        val choosenService = when(idSelectedTipPercentage){
+            R.id.idRadioAmazing -> 0.20
+            R.id.idRadioGood -> 0.18
+            else -> 0.15
+        }
+
+        this.tipAmount= costOfBill*choosenService
+        this.totalAmount=costOfBill*(1+choosenService)
+    }
 
 
 }
