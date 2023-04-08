@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.idImageView.setOnLongClickListener {
+            binding.idTextView.text = "Drinked lemonades count is : ${lemodaneCount}"
+            true
+        }
         pickLemon()
 
     }
